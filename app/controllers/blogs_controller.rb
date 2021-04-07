@@ -6,9 +6,9 @@ class BlogsController < ApplicationController
   end
 
   def new
-    @blog=Blog.new
+    @blogs=Blog.all
   end
-  
+
   def create
     blog = Blog.new(blog_params)
     blog.save
